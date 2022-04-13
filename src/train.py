@@ -16,6 +16,7 @@ features_path = sys.argv[1]
 model_filename = sys.argv[2]
 
 # read pipeline params
+#yaml.safe_load() -> {'train':0.9}
 params = yaml.safe_load(open('params.yaml'))['train']
 
 alpha = params['alpha']

@@ -1,6 +1,10 @@
+##scriptname:
+##  argument_name:
+##      - argument_value
 prepare:
     categories:
         - comp.graphics
-        - rec.sport.baseball
+        - sci.space
+
 train:
-    alpha: 0.9
+    alpha: 0.1

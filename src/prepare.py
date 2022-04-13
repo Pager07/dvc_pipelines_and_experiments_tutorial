@@ -2,10 +2,12 @@ import os
 import yaml
 from sklearn.datasets import fetch_20newsgroups
 import pandas as pd
-
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 # read params
 params = yaml.safe_load(open('params.yaml'))['prepare']
 
+#params[categories] -> [..]
 categories = params['categories']
 
 # create folder to save file
